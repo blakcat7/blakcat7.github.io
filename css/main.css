@@ -1,6 +1,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Quicksand:300,400,500,700');
+
 body {
     padding-top: 50px;
     background-color: #eee;
@@ -53,7 +56,9 @@ h2{
 .nav-container{
     background-color: #eee;
     list-style:none;
-    text-align:center;
+    width: 600px;
+    display : block;
+    margin : auto;
 }
 
 .f-nav{ 
@@ -64,16 +69,72 @@ h2{
     width: 100%;
 } /* this make our menu fixed top */
 
-.nav li{
-    display:inline;
+nav {
+    height: 40px;
+    background: #eee;
+    font-size: 11pt;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    margin:0;
+    padding:0;
+    border-bottom: 1px solid black;
+
 }
-.nav a{
-    display:inline-block;
-    padding:10px;
+nav ul {
+    padding: 0;
+    margin: auto;
+    height: 40px;
+}
+nav li {
+    display: inline;
+    width: auto;
+}
+nav a {
+    color: #333;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+}
+nav li a {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
+nav a:hover, nav a:active, nav a:focus{
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #333;
+    text-decoration: none;
+}
 
-@media only screen and (max-width: 479px){
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+    nav { 
+        height: auto;
+    }
+    nav ul {
+        display: inline-block;
+        height: auto;
+    }
+
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+    .nav-container {
+        
+        width: 100%;
+    }
+    nav {
+        font-size: 9pt;
+    }
+    nav ul {
+        height: auto;
+    }
+
     .divider { 
         width: 100%; 
     }
@@ -86,7 +147,6 @@ h2{
         font-size: 8pt;
     }
 }
-
 
 
 
