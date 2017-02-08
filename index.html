@@ -27,27 +27,52 @@
     </head>
     <body>
         <div class="container" >
-            <img class="img-responsive paint aniview" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/paint.png"/>
-            <div class="divider aniview" data-av-animation="fadeIn"></div>
-            <div class="aniview" data-av-animation="slideInRight">
+            <img class="img-responsive paint aniview reallyslow" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/paint.png"/>
+            <div class="aniview" data-av-animation="bounce">
                 <h1 class="light">ANTHEA MARIE</h1><h1 class="bold">BULACLAC</h1>
             </div> 
-            <div class="aniview" data-av-animation="slideInLeft">
+            <div class="aniview" data-av-animation="fade">
                 <h2 class="bold">GRAPHIC DESIGNER & FRONT-END DEVELOPER</h2>
             </div>
             <div class="divider aniview" data-av-animation="fadeIn"></div>
-        </div>   
-        <div class="container" >
             <div class="nav-container">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
                 </nav>
             </div> 
+            <div class="box" id="about">
+                <img class="img-responsive img aniview" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/about.png"/>
+                <h2 class="bold">ABOUT ME</h2>
+                <p class="semi-bold aniview" data-av-animation="slideInRight">Heyya! I'm Anthea, a designer and front-end web developer based in Dubai, United Arab Emirates.</p>
+                <br/>
+                <p class="reg aniview" data-av-animation="slideInLeft">
+                    I am currently an undergraduate student at Heriot Watt University, Dubai Campus taking BSc Computer Systems. 
+                    I specialize in creating and designing websites, mobile apps, and user interfaces. I am also keen in learning 3D modeling and animation.
+                    <br/><br/>
+                    Aside from "studying" and doing work, I also enjoy joining competitions/hackathons to learn more and improve my skills. 
+                    I play games, watch anime and dramas, and learn stuffs during my free time.
+                </p>
+
+            </div>
+            <div class="container">
+                <div class="col-md-4">
+                    <img class="img-responsive icon aniview" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/web.png"/>
+                    <h3 class="bold">Web Development</h3>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive icon aniview" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/mobile.png"/>
+                    <h3 class="bold">Mobile Development</h3>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive icon aniview" data-av-animation="fadeIn" alt="Doodle by: Anthea" src="img/art.png"/>
+                    <h3 class="bold">Visual Design</h3>
+                </div>
+            </div>
         </div>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -58,7 +83,7 @@
                     animateThreshold: 100,
                     scrollPollInterval: 20
                 };
-                
+
                 $('.aniview').AniView(options);
 
                 var nav = $('.nav-container');

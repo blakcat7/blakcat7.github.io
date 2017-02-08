@@ -6,15 +6,23 @@
 
 body {
     padding-top: 50px;
+    margin-bottom: 50px;
     background-color: #eee;
     color: #333;
     overflow-x:hidden;
+
 }
 
 .container {
     text-align: center;
+    display : block;
+    margin : auto;
 }
 
+.box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 h1{
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
@@ -29,34 +37,52 @@ h2{
     margin-top: 5px;
 }
 
+h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14pt; 
+    margin-top: 5px;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
 .bold{
     font-weight: 800;
 }
 
 .light{
-    font-weight: 200;
+    font-weight: 300;
 }
 
-
-
-.paint{
+img{    
+    padding: 10px;
     display : block;
-    margin : auto;
-    width: 500px;
+    margin : auto
 }
 
+.paint{;
+       width: 500px;
+}
+
+.img{
+    width: 200px;
+}
+
+.icon {
+    width: 100px;
+}
 .divider{
     background-color: #333;
     height: 5px;
-    width: 600px;
-    display : block;
-    margin : auto;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .nav-container{
     background-color: #eee;
     list-style:none;
-    width: 600px;
+    width: 100%;
     display : block;
     margin : auto;
 }
@@ -110,6 +136,12 @@ nav a:hover, nav a:active, nav a:focus{
     text-decoration: none;
 }
 
+p {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    display : block;
+    margin : auto;
+}
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 600px) {
     nav { 
@@ -125,7 +157,7 @@ nav a:hover, nav a:active, nav a:focus{
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 480px) {
     .nav-container {
-        
+
         width: 100%;
     }
     nav {
@@ -143,10 +175,22 @@ nav a:hover, nav a:active, nav a:focus{
         font-size: 14pt;
     }
 
-    h2 {
-        font-size: 8pt;
+    h2, h3{
+        font-size: 10pt;
+    }
+
+    p{
+        width: 100%;
+        font-size: 9pt;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 750px;
+    }
+}
+
 
 
 
