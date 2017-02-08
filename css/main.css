@@ -1,14 +1,14 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 body {
     padding-top: 50px;
     background-color: #eee;
     color: #333;
+    overflow-x:hidden;
 }
 
-#page1 {
+.container {
     text-align: center;
 }
 
@@ -50,17 +50,40 @@ h2{
     margin : auto;
 }
 
+.nav-container{
+    background-color: #eee;
+    list-style:none;
+    text-align:center;
+}
+
+.f-nav{ 
+    z-index: 9999; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%;
+} /* this make our menu fixed top */
+
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+
 @media only screen and (max-width: 479px){
     .divider { 
         width: 100%; 
     }
-    
+
     h1 {
-        font-size: 18pt;
+        font-size: 14pt;
     }
-    
+
     h2 {
-        font-size: 10pt;
+        font-size: 8pt;
     }
 }
 
