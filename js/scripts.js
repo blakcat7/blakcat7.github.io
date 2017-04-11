@@ -77,7 +77,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["I am A Freelancer.", "I am UI/UX Designer.", "Based in Dubai, UAE."],    /* You can change the home section typing text from
+            strings: ["I am A Freelancer.", "I Design Websites.", "I Live in New York."],    /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
             typeSpeed: 50
           });
@@ -131,6 +131,63 @@
 		  
 		  
           });
-  
-     
+
+       
+	   
+		 
+        /* Testimonial Carousel/Slider */
+
+        $(".testimonial-carousel-list").owlCarousel({
+            items: 1,
+            autoPlay: true,
+            stopOnHover: false,
+            navigation: true,
+            navigationText: ["<i class='fa fa-long-arrow-left fa-2x owl-navi'></i>", "<i class='fa fa-long-arrow-right fa-2x owl-navi'></i>"],
+            itemsDesktop: [1199, 1],
+            itemsDesktopSmall: [980, 1],
+            itemsTablet: [768, 1],
+            itemsTabletSmall: false,
+            itemsMobile: [479, 1],
+            autoHeight: true,
+            pagination: false,
+            transitionStyle : "backSlide"
+        });
+		
+		
+		
+		
+        /* Statistics Counter */
+		
+        $('.statistics').appear(function() {
+           var counter = $(this).find('.statistics-count');
+           var toCount = counter.data('count');
+      
+           $(counter).countTo({
+           from: 0,
+           to: toCount,
+           speed: 5000,
+           refreshInterval: 50
+           })
+           });
+		   
+		  
+         
+         /* Google Map */
+		 
+         $('#my-address').gMap({
+            zoom: 5,
+            scrollwheel: true,
+            maptype: 'ROADMAP',
+            markers:[
+            {
+            address: "New York",  /* You can change your address from here */
+            html: "<b>Address</b>: <br> Area-2, Rose Area, New York, U.S.A.",   /* You can change display address text from here */
+            popup: true
+            }
+            ]
+            });
+              
+		   
+            });
+
    })(jQuery);
